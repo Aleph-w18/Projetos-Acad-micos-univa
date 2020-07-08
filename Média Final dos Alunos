@@ -1,0 +1,52 @@
+#include <iostream>
+
+#include <locale.h>
+
+
+
+using namespace std;
+
+int main() {
+  
+  int idade, alunos = 0, somaIda = 0, mediaIDa, Aprovados = 0, Reprovados = 0, Mas, Fem = 0, sexo;
+  float m1, m2, m3, media;
+
+  while(alunos < 75)
+  {
+    alunos++;
+    cout <<  "Aluno: " << alunos << endl;
+    cout <<  "Escreva a idade: "; 
+    cin >> idade;    
+    cout <<  "Digite o sexo do aluno, 1 (Masculino) ou 2 Feminino: "; 
+    cin >> sexo;
+    cout << "Escreva a M1: "; 
+    cin >> m1;
+    cout << "Escreva a M2: "; 
+    cin >> m2;
+    cout << "Escreva a M3: "; 
+    cin >> m3;
+    somaIda = somaIda + idade;
+    media = (m1 + m2 +m3) / 3;
+    if (media >= 6)
+    {
+      Aprovados++;      
+    } else{
+      Reprovados++;
+      if (sexo == 2)
+      {
+        Fem++;
+      }
+    }  
+  }
+
+  mediaIDa = somaIda/75;
+
+  cout << "O número de alunos aprovados: " << Aprovados << endl;
+
+  cout << "O número de alunos reprovados: " << Reprovados << endl;
+
+  cout << "A idade média dos alunos: " << mediaIDa << endl;
+
+  cout << "A quantidade de mulheres reprovadas: " << Fem << endl;
+
+}
