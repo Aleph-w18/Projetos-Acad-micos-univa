@@ -1,0 +1,7 @@
+num = int(input('de quilometros percorridos '))
+num1 = int(input(' poe favor degite um o tempo de viagem'))
+result1 = num/num1*10
+if result1 < 110:
+    print (' QUILOMETROS {} TEMPO {} e VELOCIDADE MEDIA {}'.format(num, num1, result1))
+elif result1 > 110:
+    print('andou acima do permitido')
