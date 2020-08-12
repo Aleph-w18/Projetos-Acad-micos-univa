@@ -1,0 +1,6 @@
+num = int(input('insira um numero por favor'))
+num1 = 1
+num2 = 1
+result1 = num - num1
+result2 = num + num2
+print (' antecessor {} numero {} e sucessor {}'.format(result1, num, result2))
