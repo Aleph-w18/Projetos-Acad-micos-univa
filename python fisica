@@ -1,0 +1,9 @@
+from fractions import Fraction
+num = int(input('DIGA A MASSA DO OBJETO: '))
+num1 = int(input("digite o valor da velocidade: "))
+num2 = int(input('digite o valor da altura:'))
+const = 10
+EP = num * num2 * const
+EC = Fraction(1/2* num * num1 * num1)
+ET = EP + EC
+print(ET)
